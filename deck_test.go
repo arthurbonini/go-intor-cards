@@ -32,4 +32,6 @@ func TestSaveToDeckAndNewDeckFromFile(t *testing.T) {
 	if len(loadedDeck) != 16 {
 		t.Errorf("Expected Length of 16, but got %v", len(d))
 	}
+
+	os.Remove("_decktesting")
 }
